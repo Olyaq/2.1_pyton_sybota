@@ -1,0 +1,343 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNlsmIbkrs008N54PslDZi/",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Olyaq/2.1_pyton_sybota/blob/main/%D0%B4%D0%BE%D0%BF%20%D0%BA%20%D0%BB%D0%B0%D0%B1\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "zmmJTHKQlUlh",
+        "outputId": "9a065ad8-93da-4552-eb07-517305aba43b"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "ваше имя:Оля\n",
+            "год рождения:2005\n",
+            "Привет, Оля! В этом году тебе исполняется 20 лет.\n"
+          ]
+        }
+      ],
+      "source": [
+        "#1\n",
+        "name = input(\"ваше имя:\")\n",
+        "year = int(input(\"год рождения:\"))\n",
+        "age = 2025 - year\n",
+        "print(f\"Привет, {name}! В этом году тебе исполняется {age} лет.\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "n = int(input())\n",
+        "if n % 10 == 0:\n",
+        "    print(\"Число кратно и 5, и 10\")\n",
+        "else:\n",
+        "    print(\"Число не кратно одновременно 5 и 10\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "S9-K48aUnW3X",
+        "outputId": "56ebac7a-cc42-4aab-eb74-94887ff45dbc"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10\n",
+            "Число кратно и 5, и 10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = int(input())\n",
+        "b = int(input())\n",
+        "c = int(input())\n",
+        "\n",
+        "m = a\n",
+        "if b < m: m = b\n",
+        "if c < m: m = c\n",
+        "print(m)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "l-huNO5Eoe_R",
+        "outputId": "4feda9e3-732f-4e80-e42b-94d7c5778e66"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "15\n",
+            "17\n",
+            "2\n",
+            "2\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "start = int(input())\n",
+        "end = int(input())\n",
+        "\n",
+        "found = False\n",
+        "for i in range(start, end + 1):\n",
+        "    if i % 2 == 0:\n",
+        "        print(i, end=\" \")\n",
+        "        found = True\n",
+        "if not found:\n",
+        "    print(\"В этом диапазоне нет чётных чисел.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "laLRE01UouSY",
+        "outputId": "e214967d-ea6a-4230-e190-aaa45e826ef5"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3\n",
+            "10\n",
+            "4 6 8 10 "
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "numbers = [12, -5, 23, 0, 4, 17, -8, 0, 11]\n",
+        "\n",
+        "print(len(numbers))\n",
+        "print(numbers[-1])\n",
+        "print(numbers[::-1])\n",
+        "\n",
+        "if 5 in numbers and 17 in numbers:\n",
+        "    print(\"Да\")\n",
+        "else:\n",
+        "    print(\"Нет\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "OU9J0OmUo96O",
+        "outputId": "540992d0-7715-4643-c644-8d1a3a9a7a3e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "9\n",
+            "11\n",
+            "[11, 0, -8, 17, 4, 0, 23, -5, 12]\n",
+            "Нет\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "student = {\"name\": \"Оля\", \"age\": 20, \"course\": \"Питон\", \"grades\": [4, 5, 3, 5, 4]}\n",
+        "print(student[\"name\"], student[\"course\"])\n",
+        "print(sum(student[\"grades\"]) / len(student[\"grades\"]))\n",
+        "student[\"grades\"].append(5)\n",
+        "print(student)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "FPkUpug6pQBW",
+        "outputId": "9726cccd-f02c-4eb6-e69c-51b039ed60ab"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Оля Питон\n",
+            "4.2\n",
+            "{'name': 'Оля', 'age': 20, 'course': 'Питон', 'grades': [4, 5, 3, 5, 4, 5]}\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import math\n",
+        "\n",
+        "def calculate_circle_area(r):\n",
+        "    return math.pi * r*r\n",
+        "\n",
+        "def is_positive(x):\n",
+        "    return x > 0\n",
+        "\n",
+        "print(calculate_circle_area(3))\n",
+        "print(is_positive(-2), is_positive(5))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "T1IgprVPqG_c",
+        "outputId": "6dcdf5ff-e0e2-4e5c-edd5-860909a4fabf"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "28.274333882308138\n",
+            "False True\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "s = input()\n",
+        "res = \"\"\n",
+        "for c in s:\n",
+        "    if \"a\" <= c <= \"z\":\n",
+        "        res += chr((ord(c)-97+3)%26+97)\n",
+        "    elif \"A\" <= c <= \"Z\":\n",
+        "        res += chr((ord(c)-65+3)%26+65)\n",
+        "    else:\n",
+        "        res += c\n",
+        "print(res)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "lpPrAqAfqWbw",
+        "outputId": "46a7e159-6848-4f4c-94a5-5f15c8494e68"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "пнгпшг\n",
+            "пнгпшг\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import random\n",
+        "nums = [random.randint(-10, 10) for _ in range(15)]\n",
+        "print(nums)\n",
+        "print([x for x in nums if x > 0])\n",
+        "print([x*x for x in nums])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cqhS03rmqjpJ",
+        "outputId": "b14f9993-bf62-46f5-be0d-4d56d6b2df01"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[3, 1, 8, 2, 6, -3, -4, -1, -8, 9, -3, 8, -8, -1, 5]\n",
+            "[3, 1, 8, 2, 6, 9, 8, 5]\n",
+            "[9, 1, 64, 4, 36, 9, 16, 1, 64, 81, 9, 64, 64, 1, 25]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "while True:\n",
+        "    s = input()\n",
+        "    if s == \"стоп\":\n",
+        "        break\n",
+        "    try:\n",
+        "        print(float(s))\n",
+        "    except:\n",
+        "        print(\"Ошибка: введите число или 'стоп'.\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "dwy96peEqq7F",
+        "outputId": "b26201f1-ce39-46f7-aee1-b4cbf3620fa3"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "стоп\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
